@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "daab6383-4f34-402a-a69d-eb81696f419b",
+		"name": "KIEBOT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39914664"
+	},
+	"item": [
+		{
+			"name": "sample",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/search?title=Cosmos&page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Cosmos"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "advanced1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/search?authorName=Sagan&genre=SCIENCE&publicationYearFrom=1970&publicationYearTo=1990&sort=publicationYear,asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "authorName",
+							"value": "Sagan"
+						},
+						{
+							"key": "genre",
+							"value": "SCIENCE"
+						},
+						{
+							"key": "publicationYearFrom",
+							"value": "1970"
+						},
+						{
+							"key": "publicationYearTo",
+							"value": "1990"
+						},
+						{
+							"key": "sort",
+							"value": "publicationYear,asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "advanced2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/search?loanedByMemberId=MEM-AB1234&page=0&size=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "loanedByMemberId",
+							"value": "MEM-AB1234"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "advanced3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books/search?isAvailable=true&genre=TECHNOLOGY&sort=title,asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "isAvailable",
+							"value": "true"
+						},
+						{
+							"key": "genre",
+							"value": "TECHNOLOGY"
+						},
+						{
+							"key": "sort",
+							"value": "title,asc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
